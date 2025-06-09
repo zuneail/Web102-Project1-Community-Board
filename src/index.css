@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh; 
+  background-color: rgb(165, 109, 172);
+}
+
+th {
+  width: 120px;
+  padding-top:25px;
+  padding-bottom:30px;
+}
+
+td {
+  padding: 5px;
+}
+
+.Event {
+  display: flex;
+  flex-direction: column;
+  height: 220px; /* Adjust as needed */
+  min-width: 140px;
+  min-height: 180px;
+  padding: 0;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.event-image-container {
+  flex: 1 1 60%;      /* Make image container take more space */
+  height: 60%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: none;   /* Remove any max-height restriction */
+}
+
+.event-details {
+  flex: 1 1 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.Event h5, .Event h6 {
+  margin: 2px 0;      /* Reduce vertical spacing */
+  line-height: 1.1;   /* Normal line height */
+  align-content: center;
+}
+
+.Event img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  line-height: 0px;
+  align-content: center;
+}
+.pink {
+  background: pink;
+}
+
+.blue {
+  background: rgb(190, 219, 229);
+}
+
+.green {
+  background: rgb(202, 245, 222);
+} 
+
+.calendar {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.calendar table {
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 24px 32px; /* space between cells */
+}
+
+.event-link {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  padding-bottom: 12px;
+}
+
+.event-button {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  
+}
+.event-button:hover {
+  background: #388e3c;
+}
